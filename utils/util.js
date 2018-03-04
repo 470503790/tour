@@ -57,7 +57,7 @@ function getViewData(allCity, cityName,fn) {
       let provinceId = allCity[i].provinceId
       
       // 获取景区的的sid
-      new View("http://70989421.appservice.open.weixin.qq.com/data/view.json", "get").send((res) => {
+      new View("http://shop.shensigzs.com/data/view.json", "get").send((res) => {
         // 搜索到相应的景区
         if (res.data.error_code == 0) {
           let data = res.data.result;
@@ -67,7 +67,7 @@ function getViewData(allCity, cityName,fn) {
           // 没有获取到该地的景区
           //  此处调用查找全国景区api
           // 此处模拟数据全部置为四川
-          new View("http://70989421.appservice.open.weixin.qq.com/data/view.json", "get").send((res) => {
+          new View("http://shop.shensigzs.com/data/view.json", "get").send((res) => {
             // 处理数据
             let data = res.data.result;  
            arr= dealData(data, 26);

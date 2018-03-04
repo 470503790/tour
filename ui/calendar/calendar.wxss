@@ -1,0 +1,136 @@
+    @import '../../css/icon.wxss';  
+    page {  
+      background-color: white;  
+
+      display: flex;  
+      flex-direction: column;  
+      width: 100%;  
+      height: 100%;  
+      flex-wrap: nowrap;  
+      justify-content: flex-start;  
+      align-items: stretch;  
+      font-size: 14px;  
+    }  
+    .box {  
+      display: block;  
+    }  
+      
+    .box-flex {  
+      display: -webkit-box;  
+      display: -webkit-flex;  
+      display: flex;  
+      flex-wrap: wrap;  
+    }  
+      
+    .flex-item {  
+      flex-flow: nowrap;  
+      flex-grow: 1;  
+      flex-shrink: 1;  
+      width: 14.28%;  
+    }  
+     .flex-items {  
+      flex-grow: 1;  
+      flex-shrink: 1;  
+      width: 14.28%;  
+    }  
+    .glyphicon{
+      height: 100rpx;
+      line-height: 100rpx;
+    }
+    .item-content-week {  
+      text-align: center;
+      border-left: solid 1px #ECECEC;
+      height: 100rpx;  
+      line-height: 100rpx;  
+      color: black;  
+      background:-webkit-gradient(linear, 0 0, 0 bottom, from(#ececec), to(#fafafa));  
+      display: flex;
+      flex-direction: column;
+    }  
+    .item-content {  
+      border-left: solid 1px #ECECEC;
+      height: 100rpx;  
+      color: black;  
+      background:-webkit-gradient(linear, 0 0, 0 bottom, from(#ececec), to(#fafafa));  
+      display: flex;
+      flex-direction: column;
+    }  
+    .bk-color-day {  
+      border-left: solid 1px #ECECEC;
+      height: 100rpx;  
+      
+      background:-webkit-gradient(linear, 0 0, 0 bottom, from(#ececec), to(#fafafa));  
+      display: flex;
+      flex-direction: column;
+    }  
+     .selectDay {  
+      border-left: solid 1px #ECECEC;
+      height: 100rpx;  
+      color: black;  
+      background-color: #23beae;
+      display: flex;
+      flex-direction: column;
+      border-radius:10px;
+
+    } 
+    .numDayTextView{
+       margin-top: 15rpx;
+       text-align: center;
+       width: 100%;
+       color:#23beae;
+    }
+    .numDayTextViewSelect{
+        margin-top:15rpx;
+        text-align:center;
+        width:100%;
+        color:white;
+    }
+    .contentTextViewSelect {
+        text-align:center;
+        width:100%;
+        color:white;
+    }
+    .numDayTextViewDisabled{
+        margin-top:15rpx;
+        text-align:center;
+        width:100%;
+        color:#a0a0a0;
+
+    }
+     .contentTextView{
+      height: 30rpx;
+      font-size: 26rpx;
+      width: 100%;
+      line-height: 30rpx;
+      text-align: center;
+      color:#23beae;
+    }
+    .current-select-day {  
+        margin-top:15rpx;
+        text-align:center;
+        width:100%;
+        color:red;
+    }  
+    .current-select-text {  
+        text-align:center;
+        width:100%;
+        color:red;
+    }  
+    .listView{
+      display: flex;
+      flex-direction: column;
+    }
+    .itmesView{
+      display: flex;
+      flex-direction: row;
+    }
+    .showTextView{
+      width: 100%;
+      line-height: 50rpx;
+      background-color: #fafafa;
+      border-bottom: solid 1px #ececec;
+      border-top: solid 1px #ececec;
+      font-size: 30rpx;
+      color: gray;
+    }
+   

@@ -1,0 +1,13 @@
+<template name="album-list">
+  <view class="sennd-main">
+    <view class="sennd-hd">
+      <navigator class="a-more">更多活动</navigator>
+      <text>精彩活动分享</text>
+    </view>
+    <view class="sennd-bd">
+    <view class="pic" wx:for="{{albumList}}" wx:for-item="item" wx:key="p">
+    <image  mode="scaleToFill" src="{{item.src}}"></image>
+    </view>
+    </view>
+  </view>
+</template>

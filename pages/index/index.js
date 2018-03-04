@@ -7,21 +7,34 @@ Page({
     cityHot: [],
     viewHot: [],
     viewList: [],
-    active: true,
+    active: 1,
     viewDetail: [],
     loading: true,
-    animationData: {}
+    animationData: {},
+    albumList: [{
+      src: 'http://www.szleyou.com/pictures/TrustSoft/News/201817164942480.jpg'
+    },
+    {
+      src: 'http://www.szleyou.com/pictures/TrustSoft/News/201817164942480.jpg'
+    },
+    {
+      src: 'http://www.szleyou.com/pictures/TrustSoft/News/201817164942480.jpg'
+    },
+    {
+      src: 'http://www.szleyou.com/pictures/TrustSoft/News/201817164942480.jpg'
+    }
+    ]
   },
   onLoad() {
     let _this = this;
     // 获取热门城市
-    new View("http://70989421.appservice.open.weixin.qq.com/data/city.json", "get").send((res) => {
+    new View("http://shop.shensigzs.com/data/city.json", "get").send((res) => {
       let data = res.data.result;
       dealCityHot(data);
       this.getCity();
     })
     // 获取热门景区
-    new View("http://70989421.appservice.open.weixin.qq.com/data/view.json", "get").send((res) => {
+    new View("http://shop.shensigzs.com/data/view.json", "get").send((res) => {
       let data = res.data.result;
       dealViewHot(data);
     })
@@ -106,13 +119,15 @@ Page({
 
   // 获取周边热门游
   getaroundView() {
-    this.tabGetData(true, true, "aroundViewList", cityName)
+    this.tabGetData(1, true, "aroundViewList", cityName)
   },
   // 获取国内热门游游
   getcountryView() {
-    this.tabGetData(false, true, 'countryViewList', "北京")
+    this.tabGetData(2, true, 'countryViewList', "北京")
   },
-
+  getgaotieView(){
+    this.tabGetData(3, true, 'gaotieViewList', "111")
+  },
   tabGetData(active, loading, key, city) {
     let _this = this;
     this.leaveAnimate();

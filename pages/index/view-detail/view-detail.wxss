@@ -14,6 +14,11 @@ page {
   display: flex;
   align-items: center;
   background: #98d361;
+  position:fixed;
+  left:0;
+  top:0;
+  z-index:1001;
+
 }
 
 .view-detail .top view {
@@ -41,6 +46,8 @@ page {
 .swiper {
   position: relative;
   height: 300rpx;
+  margin-top:88rpx;
+
 }
 
 .swiper image {
@@ -86,7 +93,7 @@ page {
 
 .desc .share .icon {
   display: block;
-  background: url(/images/home/view_detail.png) no-repeat;
+  background: url(http://shop.shensigzs.com/images/home/view_detail.png) no-repeat;
   background-size: 172rpx 56rpx;
   height: 48rpx;
   width: 48rpx;
@@ -106,7 +113,7 @@ page {
  .pos .icon {
   height: 40rpx;
   width: 30rpx;
-  background: url(/images/home/view_detail.png) no-repeat;
+  background: url(http://shop.shensigzs.com/images/home/view_detail.png) no-repeat;
   background-size: 172rpx 56rpx;
   background-position: -14rpx -8rpx;
   margin-right: 38rpx;
@@ -243,7 +250,7 @@ page {
   height: 8rpx;
   width: 18rpx;
   background-position: 0 0;
-  background: url(/images/home/view_detail.png) no-repeat;
+  background: url(http://shop.shensigzs.com/images/home/view_detail.png) no-repeat;
   background-size: 86px 28px;
 }
 
@@ -259,7 +266,7 @@ page {
 }
 
 .preferential text:nth-of-type(1), .preferential text:nth-of-type(4) {
-  background: url(/images/home/view_detail.png) no-repeat;
+  background: url(http://shop.shensigzs.com/images/home/view_detail.png) no-repeat;
   background-size: 172rpx 56rpx;
 }
 
@@ -356,4 +363,57 @@ page {
 }
 .need .content>view:last-child{
   padding-bottom: 23rpx;
+}
+/*底部菜单*/
+.fix-box {
+  position: fixed;
+  z-index: 1001;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.ctrl-box {
+  background: #fff;
+  border-top: 1px solid #f2f2f2;
+  height: 1.5rem;
+  box-sizing: border-box;
+  line-height: 1.5rem;
+}
+.ctrl-box .booking {
+  background-color: #ff5346;
+  color: #fff;
+  cursor: pointer;
+}
+.f16 {
+  font-size: 16px;
+  text-align:center;
+
+}
+.ctrl-box .telephone {
+  float: left;
+  color: #333;
+  background: #f6f6f6;
+  width: 22.2%;
+}
+
+.ctrl-box .zixun {
+  float: left;
+  color: #333;
+  background: #ededed;
+  width: 22.2%;
+}
+.ctrl-box .zixun button{
+  height:56rpx;
+  line-height:56rpx;
+
+}
+.ctrl-box .collect{
+  float:left;
+  color:#333;
+  background:#e5e1de;
+  width:22.2%;
+}
+.ctrl-box .collect .img,.ctrl-box .telephone .img,.ctrl-box .zixun .img{
+  width:30rpx;
+  height:30rpx;
 }

@@ -55,7 +55,7 @@ page{
   height: 8rpx;
   width: 18rpx;
   margin-left: 18rpx;
-  background: url(/images/destination/destination.png) no-repeat;
+  background: url(http://shop.shensigzs.com/images/destination/destination.png) no-repeat;
   background-size: 94rpx 38rpx;
 }
 
@@ -87,7 +87,7 @@ page{
   top: 20rpx;
   height: 26rpx;
   width: 26rpx;
-  background: url(/images/destination/destination.png) no-repeat;
+  background: url(http://shop.shensigzs.com/images/destination/destination.png) no-repeat;
   background-size: 94rpx 38rpx;
   background-position: -38rpx 0;
 }
@@ -134,7 +134,7 @@ text-align: center;
   height: 8rpx;
   width: 18rpx;
   background-position: -18px 0;
-  background: url(/images/destination/destination.png) no-repeat;
+  background: url(http://shop.shensigzs.com/images/destination/destination.png) no-repeat;
   background-size: 94rpx 38rpx;
 }
 
@@ -264,7 +264,7 @@ text-align: center;
   height: 38rpx;
   width: 30rpx;
   margin-top: 15rpx;
-  background: url(/images/destination/destination.png) no-repeat;
+  background: url(http://shop.shensigzs.com/images/destination/destination.png) no-repeat;
   background-size: 94rpx 38rpx;
   background-position: -64rpx 0;
 }

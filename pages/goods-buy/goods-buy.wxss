@@ -1,0 +1,114 @@
+page{
+    background:#f0ede2;
+
+}
+.auction-info {
+    padding: 15px;
+    font-size: 16px;
+    background-color:#fff;
+
+}
+.auction-date {
+    background-color: #fff;
+    height: 90rpx;
+    line-height: 90rpx;
+    font-size: 32rpx;
+    margin-bottom: 20rpx;
+    padding: 0 24rpx;
+    margin-top:10rpx;
+}
+.auction-date label {
+    color: #666;
+}
+.auction-date navigator {
+    float: right;
+}
+.auction-count {
+    padding:0 24rpx;
+    background-color:#fff;
+    font-size:32rpx;
+    height:90rpx;
+    line-height:90rpx;
+    margin-bottom:20rpx;
+
+}
+.auction-count label {
+    color: #666;
+}
+.auction-count .num-box {
+    float: right;
+    
+}
+.auction-persons{
+    padding:0 24rpx;
+    background-color:#fff;
+    font-size:32rpx;
+    color: #666;
+    margin-bottom:20rpx;
+
+}
+.auction-persons .people,.auction-persons .mobile,.auction-persons .cardNo,.auction-persons .mark{
+    padding:20rpx 0;
+    margin:20rpx 0;
+
+}
+.auction-persons .people label,.auction-persons .mobile label,.auction-persons .cardNo label{
+    float:left;
+    margin-right:20rpx;
+
+}
+.fix-box{
+    position: fixed;
+    z-index: 1001;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border-top: 2rpx solid #ddd;
+}
+.fix-btn {
+    background-color: #ff5346;
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center;
+    font-size: 36rpx;
+    float: right;
+    border: none;
+    width: 240rpx;
+    padding: 0;
+    color: #fff;
+    border-radius: 0;
+}
+.fix-count {
+    font-size: 32rpx;
+    padding-left: 24rpx;
+    height:100rpx;
+    line-height:100rpx;
+
+}
+.fix-count label{
+    float:left;
+}
+.fix-count .price {
+    margin-left: 4rpx;
+    font-size: 36rpx;
+    color: #ff5346;
+    float:left;
+}
+.zan-popup--bottom .zan-popup__container{
+    width:100%;
+    bottom:100rpx;
+}
+.zan-btns{
+    font-size:26rpx;
+
+}
+.zan-btns .mp-info{
+    color: #9e9e9e;
+}
+.zan-btns .mp-info-title{
+    font-size:32rpx;
+}
+.zan-btns .mp-info-price,.zan-btns .mp-info-symbol{
+    float:left;
+}

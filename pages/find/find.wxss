@@ -22,7 +22,7 @@
 .tab .icon{
 width: 9rpx;
 height: 19rpx;
-background: url(/images/find/more.png)no-repeat;
+background: url(http://shop.shensigzs.com/images/find/more.png)no-repeat;
 background-size: 9rpx 19rpx;
 
 }

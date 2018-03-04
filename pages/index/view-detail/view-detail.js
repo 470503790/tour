@@ -4,11 +4,13 @@ Page({
     active: 0,
     date: [],
     ratings:{},
-    viewDetail: {}
+    viewDetail: {},
+    collect:0,
+    moblie:'13692950061'
   },
   onLoad: function (options) {
     // 页面初始化 options为页面跳转所带来的参数
-    let sid = options.sid;
+    let sid = 30;//options.sid;
     let obj = {};
     let _this = this;
     // 设置日期
@@ -19,7 +21,7 @@ Page({
       date: date
     })
     // 接口为根据sid查寻景点详情 
-    let url = "http://70989421.appservice.open.weixin.qq.com/data/view-detail.json"
+    let url = "http://shop.shensigzs.com/data/view-detail.json"
     new View(url, "get").send((res) => {
       if (res.data.error_code == 0) {
         let result = res.data.result;
@@ -55,6 +57,25 @@ Page({
   ratingClick() {
     this.setData({
       active: 2
+    })
+  },
+  //收藏
+  collectClick(event){
+    if(event.currentTarget.dataset.c==0){
+      this.setData({
+        collect:1
+      })
+    }else{
+      this.setData({
+        collect:0
+      })
+    }
+    //接口提交收藏
+  },
+  //拨打电话
+  callClick(){
+    wx.makePhoneCall({
+      phoneNumber:this.data.moblie
     })
   }
 })

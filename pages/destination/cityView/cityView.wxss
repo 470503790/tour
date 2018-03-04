@@ -31,7 +31,7 @@ page {
   margin-left: 20rpx;
   height: 13rpx;
   width: 22rpx;
-  background: url(/images/destination/tab_icon.png)no-repeat 0 0;
+  background: url(http://shop.shensigzs.com/images/destination/tab_icon.png)no-repeat 0 0;
   background-size: 22rpx 13rpx;
 }
 

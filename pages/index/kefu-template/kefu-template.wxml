@@ -1,0 +1,8 @@
+<template name="kefu">
+  <view class="zixun f16">
+    <image src="/images/detail/kefu.png" class="img"></image>
+      <contact-button style="opacity:0;position:absolute;" type="default-dark"  session-from="weapp" size="27"></contact-button>
+      客服
+      
+  </view>
+</template>

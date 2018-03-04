@@ -1,4 +1,6 @@
-
+<import src="../collect-template/collect-template.wxml" />
+<import src="../call-template/call-template.wxml" />
+<import src="../kefu-template/kefu-template.wxml" />
 <!--景点详情页-->
 <import src="../ratings-template/ratings.wxml" />
 <view class="view-detail">
@@ -107,4 +109,13 @@
       </view>
     </view>
   </view>
+  <!-- 底部菜单 -->
+<view class="fix-box">
+  <view class="ctrl-box cf">
+    <template is="collect" data="{{collect}}"/>
+    <template is="call" />
+    <template is="kefu" />
+    <navigator class="booking f16" url="/pages/goods-buy/goods-buy">立即预订</navigator>
+  </view>
+</view>
 </view>

@@ -1,0 +1,44 @@
+.sennd-main {
+    padding:0 36rpx;
+    background:#fff;
+    margin-top:22rpx;
+}
+.sennd-hd {
+    border-bottom: 1rpx solid #ddd;
+    height: 56rpx;
+    padding:28rpx 0 35rpx;
+
+
+}
+.sennd-hd > navigator {
+    float: right;
+    color: #a9a9a9;
+    font-size: 26rpx;
+    margin-top: 8rpx;
+    line-height: 1;
+}
+.sennd-hd text {
+    font-size: 32rpx;
+    color: #ff500b;
+    padding-bottom: 3rpx;
+    margin-right: 4rpx;
+    display: inline-block;
+    border-bottom: solid 2rpx #ff500b;
+}
+.sennd-bd {
+    width: 100%;
+    margin-bottom: 3%;
+    height:700rpx;
+}
+
+.sennd-bd .pic {
+  float: left;
+  margin-left:2%;
+    margin-top: 3%;
+    width: 48%;
+}
+.sennd-bd view  image{
+  width: 320rpx; 
+  height: 260rpx; 
+  background-color: #eeeeee;
+}

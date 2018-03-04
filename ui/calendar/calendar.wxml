@@ -1,0 +1,65 @@
+    <view class="page">  
+      <view class="box">  
+        <view class="box-flex">  
+          <view class="flex-item">  
+            <view class="item-content-week" bindtap="doDay" data-key='left'>  
+              <view class="glyphicon glyphicon-triangle-left"></view>  
+            </view>  
+          </view>  
+          <view class="flex-item item-content-current-day">  
+            <view class="item-content-week">{{currentDate}}</view>  
+          </view>  
+          <view class="flex-item">  
+            <view class="item-content-week" bindtap="doDay" data-key="right">  
+              <view class="glyphicon glyphicon-triangle-right"></view>  
+            </view>  
+          </view>  
+        </view>  
+        <view class="box-flex">  
+          <view class="flex-items">  
+            <view class="item-content-week">一</view>  
+          </view>  
+          <view class="flex-items">  
+            <view class="item-content-week">二</view>  
+          </view>  
+          <view class="flex-items">  
+            <view class="item-content-week">三</view>  
+          </view>  
+          <view class="flex-items">  
+            <view class="item-content-week">四</view>  
+          </view>  
+          <view class="flex-items">  
+            <view class="item-content-week">五</view>  
+          </view>  
+          <view class="flex-items">  
+            <view class="item-content-week">六</view>  
+          </view>  
+          <view class="flex-items">  
+            <view class="item-content-week">日</view>  
+          </view>  
+        </view>  
+        <view class="box-flex">  
+        </view>  
+      </view>  
+    </view>  
+
+<!--日历行-->
+<view wx:for="{{6}}" class="listView" wx:for-item="voList" wx:for-index='voList'>
+<view class="itmesView" >
+<view class="flex-items" wx:for="{{7}}" wx:for-index='vo' wx:for-item="vo" wx:key="{{key}}">
+ <view class="{{bintapItme==(vo+voList*7)?'selectDay':((currentDate == DateNow)&&(currentDay==currentDayList[vo+voList*7]) ?'bk-color-day':'item-content')}}" data-idxRow="{{voList}}"  data-idxColum="{{vo}}" bindtap="{{((dataList[currentDayList[vo+voList*7]-1]==null)||(dataList[currentDayList[vo+voList*7]-1].name=='')||(dataList[currentDayList[vo+voList*7]-1].name.length==0)) ?'nodoAnything':'selectDay'}}">
+ <block wx:if="{{dataList[currentDayList[vo+voList*7]-1].name!=null && dataList[currentDayList[vo+voList*7]-1].name!=''}}">
+<view class="{{bintapItme==(vo+voList*7)?'numDayTextViewSelect':((currentDate == DateNow)&&(currentDay==currentDayList[vo+voList*7]) ?'current-select-day':'numDayTextView')}}">
+ {{currentDayList[vo+voList*7]}}
+ </view>
+ </block>
+ <block wx:else>
+ <view class="numDayTextViewDisabled">
+ {{currentDayList[vo+voList*7]}}
+ </view>
+ </block>
+ <view class="{{bintapItme==(vo+voList*7)?'contentTextViewSelect':((currentDate == DateNow)&&(currentDay==currentDayList[vo+voList*7]) ?'current-select-text':'contentTextView')}}" wx:if="{{currentDayList[vo+voList*7]!=''}}"> {{dataList[currentDayList[vo+voList*7]-1].name}}</view>
+ </view>  
+</view>
+</view>
+</view>

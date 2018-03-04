@@ -1,1 +1,2 @@
-
+@import "ui/zanui/dist/index.wxss";
+@import "pages/index/album-list-template/album-list-template.wxss";

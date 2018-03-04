@@ -84,7 +84,7 @@ page {
 .category .box .icon text {
   display: block;
   margin: 0 auto;
-  background: url(/images/home/img.png) no-repeat;
+  background: url(http://shop.shensigzs.com/images/home/img.png) no-repeat;
   background-size: 158rpx 40rpx;
 }
 

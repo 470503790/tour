@@ -1,0 +1,6 @@
+<template name="call">
+<view class="telephone f16" bindtap="callClick">
+    <image class="img" src="/images/detail/ico19.png"></image>
+    电话
+</view>
+</template>

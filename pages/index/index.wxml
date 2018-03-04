@@ -1,6 +1,7 @@
 
 <!--index.wxml-->
 <import src="view-list-template/view-list.wxml" />
+<import src="album-list-template/album-list-template.wxml" />
 <view class="home">
   <view class="img">
     <image src="/images/home/banner.png"></image>
@@ -50,32 +51,21 @@
       <text>目的地推荐 </text>
       <text>精选推荐好玩的景区、城市</text>
     </view>
-    <swiper autoplay="true" interval="3000" duration="500" indicator-dots="true" circular="true">
-      <swiper-item wx:for="{{viewHot}}" wx:key="{{index}}" wx:for-item="imgs">
-        <view class="slide-image">
-          <view class="image-wrapper">
-            <view wx:for="{{imgs}}" wx:key="{{index}}" bindtap="enterDetail">
-              <image src="{{item.imgurl}}"></image>
-              <text>{{item.title}}</text>
-            </view>
-          </view>
-        </view>
-      </swiper-item>
-    </swiper>
-    <view class="tag">
-      <text wx:for="{{cityHot}}" wx:key="{{index}}">{{item.cityName}}</text>
-      <text>更多</text>
-    </view>
+    <view class="hot-view">
+    <view style="margin: 20px 0">
   </view>
-  <view class="hot-view">
     <view class="tab">
       <view bindtap="getaroundView">
-        <text wx:if="{{active}}" class="active" >周边游</text>
-        <text wx:else>周边游</text>
+        <text wx:if="{{active==1}}" class="active" >周边旅游</text>
+        <text wx:else>周边旅游</text>
       </view>
       <view bindtap="getcountryView">
-        <text wx:if="{{!active}}" class="active">国内热门</text>
-        <text wx:else>国内热门</text>
+        <text wx:if="{{active==2}}" class="active">国内旅游</text>
+        <text wx:else>国内旅游</text>
+      </view>
+      <view bindtap="getgaotieView">
+        <text wx:if="{{active==3}}" class="active" >国外旅游</text>
+        <text wx:else>高铁旅游</text>
       </view>
     </view>
     <view>
@@ -84,6 +74,10 @@
           <template is="viewList" data="{{...item}}"></template>
         <view class="fill"></view>
       </view>
+      
     </view>
   </view>
+  </view>
+    <!--相册-->
+  <template is="album-list" data="{{albumList}}"></template>
 </view>

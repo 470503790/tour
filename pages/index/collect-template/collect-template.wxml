@@ -1,0 +1,15 @@
+<template name="collect">
+        
+        <view class="collect f16" data-c="{{collect}}" bindtap="collectClick">
+                <block wx:if="{{collect==0}}">
+                <image class="img" src="/images/detail/fav.png"></image>
+            收藏
+        </block>
+        <block wx:else="{{collect==1}}">
+                <image class="img" src="/images/detail/fav_2.png"></image>
+                    已收藏
+        </block>
+        </view>
+        
+        
+</template>
